@@ -1,1 +1,23 @@
+Given an unsorted integer array, find a pair with the given sum in it.
 
+Input:
+nums = [8, 7, 2, 5, 3, 1]
+target = 10
+ 
+Output:
+(8, 2)
+(7, 3)
+
+Solution:
+
+1. Using Brute-Force
+n=len(nums)
+for i in range(n-1):
+    for j in range(i+1,n):
+        if nums[i]+nums[j] ==target:
+            print((nums[i],nums[j]))
+      
+ time complexity of the above solution is O(n2)
+ 
+ 
+ 
