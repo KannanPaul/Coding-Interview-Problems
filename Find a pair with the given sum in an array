@@ -20,4 +20,19 @@ for i in range(n-1):
  time complexity of the above solution is O(n2)
  
  
- 
+2. Using Sorting
+
+nums = [8, 7, 2, 5, 3, 1]
+target = 10
+nums.sort()
+low, high=0,len(nums)-1
+
+while low < high:
+    if nums[low]+ nums[high] == target:
+        print((nums[low],nums[high]))
+    if nums[low]+nums[high] < target:
+        low =low+1
+    else:
+        high =high-1
+
+time complexity of the above solution is O(n.log(n))
