@@ -11,6 +11,8 @@ Output:
 Solution:
 
 1. Using Brute-Force
+nums = [8, 7, 2, 5, 3, 1]
+target = 10
 n=len(nums)
 for i in range(n-1):
     for j in range(i+1,n):
@@ -21,7 +23,6 @@ for i in range(n-1):
  
  
 2. Using Sorting
-
 nums = [8, 7, 2, 5, 3, 1]
 target = 10
 nums.sort()
@@ -36,3 +37,15 @@ while low < high:
         high =high-1
 
 time complexity of the above solution is O(n.log(n))
+
+3. Using Hashing
+nums = [8, 7, 2, 5, 3, 1]
+target = 10
+d={}
+for i,j in enumerate(nums):
+    if target - j in d:
+        print((nums[i], nums[d[target -j]]))
+    d[j]=i
+
+
+time complexity of the above solution is O(n)
