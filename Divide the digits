@@ -1,0 +1,36 @@
+Problem
+You are given a number N. 
+You are required to form two numbers X  and  Y such that:
+
+The sum of frequency of each digit in X and  Y is equal to frequency of that digit in N.
+The sum of numbers  Xand  Y must be minimum.
+Your task is to determine the minimum possible sum of  X and Y.
+
+Input format
+The first line contains an integer T that denotes the number of test cases.
+For each test case:
+The first line contains an integer N.
+
+Output format
+For each test case, you are required to print the minimum possible sum of  X and  Y in a new line.
+
+Sample Input
+2
+1321
+42255
+
+Sample Output
+25
+270
+
+Explanation
+
+For the first test case:
+Minimum possible sum is 25 , which can be achieved if .
+X=12, Y=13
+
+For the second test case:
+Minimum possible sum is 270 , which can be achieved if .
+X=245, Y=25
+
+
