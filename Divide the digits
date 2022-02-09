@@ -33,4 +33,13 @@ For the second test case:
 Minimum possible sum is 270 , which can be achieved if .
 X=245, Y=25
 
+Solution
+t=int(input())
+for _ in range(t):
+    l=list(input().strip())
+    l.sort()
+    print(int(''.join(l[0::2]))+int(''.join(l[1::2])))
+    
+  
+
 
