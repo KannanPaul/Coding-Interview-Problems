@@ -1,0 +1,36 @@
+#s1='repeat'
+#s1='repeatrepeat'
+s1='repeatrepeated'
+d=dict()
+for x in s1:
+    d[x]=d.get(x,0)+1
+
+sd=sorted(d.items(),key= lambda e: e[1])  #in built method to sor the dictonary
+
+#sort the dictionary without in-built function
+dl=[]
+for i,j in d.items():
+    dl.append([i,j])
+print(dl)
+
+for o in range(len(dl)-1,0,-1):
+    for m in range(o):
+        if dl[m][1] > dl[m+1][1]:
+            p,q=dl[m+1]
+            r,s=dl[m]
+            #print(p,q,r,s)
+            dl[m]=[p,q]
+            dl[m+1]=[r,s]
+            
+print(dl)
+l=[]
+for i,j in dl:
+ if j==1:
+   l.append(i)
+ if j>1:
+    break
+
+print(l)
+
+#to find last non-repeating character in string
+print(s.index(l[-1])
