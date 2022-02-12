@@ -1,1 +1,45 @@
+Smallest number
 
+Problem
+
+You are given a string S that represents a number. This string consists of the following characters only:
+1,2,3
+
+You can perform the following operation:
+Swap any two adjacent characters only if the absolute difference between the characters is 1
+
+Your task is to determine the smallest number that can be formed by using the provided operation. You can perform this operation any number of times (possibly zero). 
+Note: Assume 1  based indexing.
+
+Input format
+The first line contains an integer T that denotes the number of test cases.
+
+For each test case:
+The first line contains an integer that denotes the length of string S.
+The second line contains a string that denotes the string S.
+
+Output format
+For each test case, print a string representing the smallest number that can be formed in a new line.
+
+Sample Input
+2
+5
+11223
+6
+213123
+
+Sample Output
+11223
+122313
+
+Solution
+t=int(input())
+for _ in range(t):
+	n= int(input())
+	s=input()
+	pos=s.find('3')
+	pre=s[:pos]
+	suf=s[pos:]
+	pre+=''.join(c for c in suf if c=='2')
+	suf=''.join(c for c in suf if c!='2')
+	print(''.join(sorted(pre))+suf)
