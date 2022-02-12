@@ -1,0 +1,18 @@
+s="he is a good programmer, he won 865 competitions, but sometimes he dont. What do you think? All test-cases should pass. Done-done?"
+
+solution
+
+import re
+s2=s.replace(',',' ')
+s3=s2.replace('.', ' ')
+s4=s3.replace('!',' ')
+s5=s4.replace('?',' ')
+
+print(s4)
+l=s5.split(' ')
+c=0
+for i in l:
+  if re.match("^[A-Za-z-]*$", i) and len(i):
+    c=c+1
+
+print(c)
