@@ -11,7 +11,7 @@ sd=sorted(d.items(),key= lambda e: e[1])  #in built method to sor the dictonary
 dl=[]
 for i,j in d.items():
     dl.append([i,j])
-print(dl)
+#print(dl)
 
 for o in range(len(dl)-1,0,-1):
     for m in range(o):
