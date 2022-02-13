@@ -33,7 +33,7 @@ For the second test case:
 Minimum possible sum is 270 , which can be achieved if .
 X=245, Y=25
 
-Solution
+Python Solution:
 t=int(input())
 for _ in range(t):
     l=list(input().strip())
