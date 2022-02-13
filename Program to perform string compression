@@ -1,0 +1,11 @@
+Suppose we have a string s. We have to compress this string into Run length encoding form. 
+So when a character is repeated k number of times consecutively like 'bbbb' here letter 'b' is repeated four times consecutively, so the encoded form will be 'b4'. 
+For single characters we shall not add the count into it.
+
+Input
+"abbbaaaaaaccdaaab"
+
+Output
+ab3a6c2da3b
+
+Solution:
