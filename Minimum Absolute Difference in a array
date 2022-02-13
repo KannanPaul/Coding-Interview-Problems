@@ -13,3 +13,15 @@ Output: [[1,2],[2,3],[3,4]]
 Explanation: The minimum absolute difference is 1. List all pairs with difference equal to 1 in ascending order.
 
 solution:
+n=sorted(arr)
+m=float('inf')  #we can give value as 10**20
+l=[]
+for i in range(1,len(n)):
+  diff= abs(n[i-1]- n[i] )
+  if diff < m :
+    m=diff
+    l=[]
+  if diff==m:
+    l.append([n[i-1],n[i]])
+   
+print(l)
